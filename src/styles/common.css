@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #0094ff;
+  --select-color: #f7b500;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  --title-text-color: #333;
+  --label-text-color: #666;
+  --info-text-color: #999;
+  --base-background-color: #f5f7fb;
+  --block-background-color: #fff;
+  --base-border-color: #e3e8f1;
+}
+
+#app {
+  height: 100vh;
+  font-family: "PingFang SC";
+}
