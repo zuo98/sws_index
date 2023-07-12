@@ -16,10 +16,14 @@ const router = createRouter({
       component: () => import('@/views/Login.vue')
     },
     {
-      path: '/main',
-      name: 'main',
-      // children: mainRouteConfig,
-      component: () => import('@/views/main/index.vue')
+      path: '/main/list',
+      name: 'list',
+      component: () => import('@/views/main/IndexList.vue')
+    },
+    {
+      path: '/main/detail',
+      name: 'detail',
+      component: () => import('@/views/main/IndexDetail.vue')
     }
   ]
 })

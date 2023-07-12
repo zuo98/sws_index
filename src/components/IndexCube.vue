@@ -1,7 +1,10 @@
 <script setup>
 import { computed, defineComponent } from 'vue'
+import { useRouter } from 'vue-router';
 
 defineComponent({ name: 'IndexCube' })
+const router = useRouter()
+
 const prop = defineProps({
   data: {
     type: Object,
@@ -32,17 +35,19 @@ const textColor = computed(() => {
 
 const onClick = () => {
   console.log('onClick: ')
+  router.push({
+    path: '/main/detail',
+    query: {
+      indexCode: indexData.value.swindexcode
+    }
+  })
 }
 </script>
 
 <template>
-  <div
-    class="w-[200px] h-[70px] border-2 rounded-2xl p-2 border-gray-200 text-center cursor-pointer"
-    @click="onClick"
-  >
+  <div class="w-[200px] h-[70px] border-2 rounded-2xl p-2 border-gray-200 text-center cursor-pointer" @click="onClick">
     <span class="text-slate-600 font-normal">{{ indexData.swindexname }}</span>
-    <span class="text-slate-600 font-normal">{{ `(${indexData.swindexcode})` }}</span
-    ><br />
+    <span class="text-slate-600 font-normal">{{ `(${indexData.swindexcode})` }}</span><br />
     <span class="text-slate-600 font-medium">{{ indexData.l8 }}</span>
     <span class="font-medium" :style="{ color: textColor }">{{
       `(${(((indexData.l8 - indexData.l3) * 100) / indexData.l3).toFixed(2)})`
