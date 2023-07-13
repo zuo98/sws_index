@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router'
 defineComponent({ name: 'IndexCube' })
 const router = useRouter()
 
-const prop = defineProps({
+const props = defineProps({
   data: {
     type: Object,
     required: true,
@@ -26,7 +26,7 @@ const prop = defineProps({
 })
 
 const indexData = computed(() => {
-  return prop.data
+  return props.data
 })
 const textColor = computed(() => {
   const delta = Number(indexData.value.l8) - Number(indexData.value.l3)
@@ -34,7 +34,6 @@ const textColor = computed(() => {
 })
 
 const onClick = () => {
-  console.log('onClick: ')
   router.push({
     path: '/main/detail',
     query: {

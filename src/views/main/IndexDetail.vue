@@ -7,15 +7,14 @@ import IndexCard from '@/components/IndexCard.vue'
 import * as echarts from 'echarts'
 import dayjs from 'dayjs'
 import indexJson from '../../assets/json/index.json'
+
 defineComponent({ name: 'IndexDetail' })
+
 const route = useRoute()
+const indexCode = computed(() => route.query.indexCode)
+const indexName = computed(() => route.query.indexName)
+
 const indexBus = ref(indexJson)
-const indexCode = computed(() => {
-  return route.query.indexCode
-})
-const indexName = computed(() => {
-  return route.query.indexName
-})
 const indexTwoBusList = ref([])
 const hasChild = computed(() => {
   return indexCode.value.endsWith('0')
@@ -31,6 +30,7 @@ const childIndex = computed(() => {
     return []
   }
 })
+
 const { getIndexCurrentByType } = useIndexType()
 const { getIndexCurrentData, getIndexTimelinesData, getIndexTimelinesByType } = useIndex({
   indexCode: indexCode.value
@@ -41,7 +41,7 @@ const timelinesData = ref([])
 const timelinesDay = ref([])
 const interval = ref(null)
 
-const indeXTitle = computed(() => {
+const indexTitle = computed(() => {
   return `${currentData.value?.l2} (${currentData.value?.l1})`
 })
 
@@ -428,7 +428,7 @@ onBeforeUnmount(() => {
 <template>
   <div class="flex flex-col items-center">
     <div class="m-2 flex items-end gap-5">
-      <span class="text-2xl font-medium">{{ indeXTitle }}</span>
+      <span class="text-2xl font-medium">{{ indexTitle }}</span>
     </div>
     <index-card :data="currentData"></index-card>
     <el-tabs v-model="activeTabName" type="card" @tab-change="handleChange">
