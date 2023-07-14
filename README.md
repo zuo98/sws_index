@@ -1,6 +1,5 @@
 # sws_index
-    申万指数
-    ([vue3](https://cn.vuejs.org/)+[vite](https://cn.vitejs.dev/)+[tailwind](https://www.tailwindcss.cn/)+[element](https://element-plus.org))
+申万指数([vue3](https://cn.vuejs.org/)+[vite](https://cn.vitejs.dev/)+[tailwind](https://www.tailwindcss.cn/)+[element](https://element-plus.org))
 
 ## Recommended IDE Setup
 
