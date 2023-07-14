@@ -27,14 +27,18 @@ const indexType = [
     key: 3
   }
 ]
+const loading = ref(true)
 const type = ref('市场表征')
 const indexCurrentList = ref([])
 const interval = ref(null)
 
-const fetchData = () => {
-  getIndexCurrentByType(type.value).then(({ data }) => {
+const fetchData = async () => {
+  indexCurrentList.value = []
+  loading.value = true
+  await getIndexCurrentByType(type.value).then(({ data }) => {
     indexCurrentList.value = data?.results || []
   })
+  loading.value = false
 }
 onMounted(() => {
   fetchData()
@@ -45,7 +49,7 @@ onMounted(() => {
     } else {
       clearInterval(interval.value)
     }
-  }, 5000)
+  }, 60000)
 })
 onBeforeUnmount(() => {
   clearInterval(interval.value)
@@ -61,7 +65,7 @@ onBeforeUnmount(() => {
         :value="item.value"
       />
     </el-select>
-    <div class="flex flex-wrap justify-center my-5 w-4/5">
+    <div class="flex flex-wrap justify-center my-5 w-4/5 min-h-[180px]" v-loading="loading">
       <index-cube
         v-for="index in indexCurrentList"
         :key="index.swindexcode"

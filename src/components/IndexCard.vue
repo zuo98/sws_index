@@ -1,29 +1,55 @@
 <script setup>
-import { computed, defineComponent } from 'vue'
+import { defineComponent, computed, ref, onMounted, onBeforeUnmount, watch } from 'vue'
+import { useIndex } from '@/composables/useIndex'
+import dayjs from 'dayjs'
 
 defineComponent({ name: 'IndexCard' })
 const props = defineProps({
-  data: {
-    type: Object,
-    required: true,
-    default: () => {
-      return {
-        l3: '0', //昨收
-        l4: '0', //今开
-        l5: '0', //成交额
-        l6: '0', //最高佳
-        l7: '0', //最低价
-        l8: '0', //最新价
-        l11: '0', //成交量
-        swindexcode: '', //指数代码
-        swindexname: '' //指数名称
-      }
-    }
+  code: {
+    type: String,
+    required: true
   }
 })
+const indexCode = computed(() => {
+  return props.code
+})
 
-const currentData = computed(() => {
-  return props.data
+const loading = ref(true)
+const currentData = ref({})
+const { getIndexCurrentData } = useIndex({
+  indexCode: indexCode.value
+})
+const fetchData = async () => {
+  currentData.value = {}
+  loading.value = true
+  currentData.value = await getIndexCurrentData(indexCode.value).then(({ data }) => data?.[0] || {})
+  loading.value = false
+}
+
+watch(
+  () => indexCode.value,
+  () => {
+    fetchData()
+  }
+)
+const interval = ref(null)
+onMounted(async () => {
+  await fetchData()
+  interval.value = setInterval(async () => {
+    const hour = dayjs().hour()
+    if (hour >= 9 && hour < 15) {
+      await fetchData()
+    } else {
+      clearInterval(interval.value)
+    }
+  }, 60000)
+})
+onBeforeUnmount(() => {
+  clearInterval(interval.value)
+})
+
+const indexTitle = computed(() => {
+  return `${currentData.value.l2} (${currentData.value.l1})`
 })
 
 const indexDelta = computed(() => {
@@ -73,12 +99,17 @@ const currentFormat = computed(() => {
 </script>
 
 <template>
-  <el-card shadow="hover" class="w-3/5">
+  <el-card shadow="hover" class="w-3/5" v-loading="loading">
     <template #header>
-      <div class="px-8 flex items-end gap-5">
-        <span class="text-2xl font-medium" :style="{ color: textColor }">{{ currentData.l8 }}</span>
-        <span :style="{ color: textColor }">{{ Number(indexDelta).toFixed(2) }}</span>
-        <span :style="{ color: textColor }">{{ `${Number(indexDeltaRate).toFixed(2)}%` }}</span>
+      <div class="flex items-end px-6">
+        <span class="text-3xl font-medium">{{ indexTitle }}</span>
+        <div class="px-8 flex items-end gap-5">
+          <span class="text-2xl font-medium" :style="{ color: textColor }">{{
+            currentData.l8
+          }}</span>
+          <span :style="{ color: textColor }">{{ Number(indexDelta).toFixed(2) }}</span>
+          <span :style="{ color: textColor }">{{ `${Number(indexDeltaRate).toFixed(2)}%` }}</span>
+        </div>
       </div>
     </template>
     <div class="grid gap-x-8 gap-y-2 grid-cols-4 px-6">

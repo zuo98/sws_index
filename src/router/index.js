@@ -6,7 +6,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: () => import('@/views/Home.vue')
     },
@@ -24,6 +24,10 @@ const router = createRouter({
       path: '/main/detail',
       name: 'detail',
       component: () => import('@/views/main/IndexDetail.vue')
+    },
+    {
+      path: '/',
+      redirect: '/main/list'
     }
   ]
 })

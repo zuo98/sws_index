@@ -4,7 +4,6 @@ import { useRouter } from 'vue-router'
 
 defineComponent({ name: 'IndexCube' })
 const router = useRouter()
-
 const props = defineProps({
   data: {
     type: Object,
