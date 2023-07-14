@@ -1,7 +1,8 @@
 <script setup>
 import { defineComponent, computed, onMounted, ref, watch } from 'vue'
-import { useIndex } from '../composables/useIndex'
+import { useIndex } from '@/composables/useIndex'
 import * as echarts from 'echarts'
+import { INDEX_COLOR } from '@/constants/dictionary'
 
 defineComponent({ name: 'IndexDayKChart' })
 const props = defineProps({
@@ -69,9 +70,6 @@ const calculateMA = (dayCount, data) => {
   }
   return result
 }
-
-const upColor = '#00da3c'
-const downColor = '#ec0000'
 
 const chartDayOption = computed(() => {
   const data = formatDayData(timelinesDay.value)
@@ -142,11 +140,11 @@ const chartDayOption = computed(() => {
       pieces: [
         {
           value: 1,
-          color: downColor
+          color: INDEX_COLOR.DOWN
         },
         {
           value: -1,
-          color: upColor
+          color: INDEX_COLOR.UP
         }
       ]
     },
@@ -228,8 +226,8 @@ const chartDayOption = computed(() => {
         type: 'candlestick',
         data: data.values,
         itemStyle: {
-          color: upColor,
-          color0: downColor,
+          color: INDEX_COLOR.UP,
+          color0: INDEX_COLOR.DOWN,
           borderColor: undefined,
           borderColor0: undefined
         }

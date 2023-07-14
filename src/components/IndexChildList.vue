@@ -2,7 +2,7 @@
 import { defineComponent, ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
 import { useIndexType } from '@/composables/useIndexType'
 import IndexCube from '@/components/IndexCube.vue'
-import indexJson from '../assets/json/index.json'
+import indexJson from '@/assets/json/index.json'
 import dayjs from 'dayjs'
 
 defineComponent({ name: 'IndexChildList' })

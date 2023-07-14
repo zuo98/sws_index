@@ -1,6 +1,7 @@
 <script setup>
 import { computed, defineComponent } from 'vue'
 import { useRouter } from 'vue-router'
+import { INDEX_COLOR } from '@/constants/dictionary'
 
 defineComponent({ name: 'IndexCube' })
 const router = useRouter()
@@ -27,9 +28,10 @@ const props = defineProps({
 const indexData = computed(() => {
   return props.data
 })
+
 const textColor = computed(() => {
   const delta = Number(indexData.value.l8) - Number(indexData.value.l3)
-  return delta >= 0 ? 'red' : 'LimeGreen'
+  return delta >= 0 ? INDEX_COLOR.UP : INDEX_COLOR.DOWN
 })
 
 const onClick = () => {

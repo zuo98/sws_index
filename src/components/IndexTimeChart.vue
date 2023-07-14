@@ -1,6 +1,6 @@
 <script setup>
 import { defineComponent, computed, ref, onMounted, onBeforeUnmount, watch } from 'vue'
-import { useIndex } from '../composables/useIndex'
+import { useIndex } from '@/composables/useIndex'
 import * as echarts from 'echarts'
 import dayjs from 'dayjs'
 

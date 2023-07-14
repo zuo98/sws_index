@@ -2,7 +2,7 @@
 import { defineComponent, computed, ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import { useIndex } from '@/composables/useIndex'
 import dayjs from 'dayjs'
-
+import { INDEX_COLOR } from '@/constants/dictionary'
 defineComponent({ name: 'IndexCard' })
 const props = defineProps({
   code: {
@@ -61,7 +61,7 @@ const indexDeltaRate = computed(() => {
 })
 
 const textColor = computed(() => {
-  return indexDelta.value > 0 ? 'red' : 'LimeGreen'
+  return indexDelta.value > 0 ? INDEX_COLOR.UP : INDEX_COLOR.DOWN
 })
 
 const currentFormat = computed(() => {
