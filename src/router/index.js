@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// import mainRouteConfig from './config.js'
+import mainRouteConfig from './config.js'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,18 +16,14 @@ const router = createRouter({
       component: () => import('@/views/Login.vue')
     },
     {
-      path: '/main/list',
-      name: 'list',
-      component: () => import('@/views/main/IndexList.vue')
-    },
-    {
-      path: '/main/detail',
-      name: 'detail',
-      component: () => import('@/views/main/IndexDetail.vue')
+      path: '/main',
+      name: 'Layout',
+      children: mainRouteConfig,
+      component: () => import('@/views/main/Index.vue')
     },
     {
       path: '/',
-      redirect: '/main/list'
+      redirect: '/main'
     }
   ]
 })

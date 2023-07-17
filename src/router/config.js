@@ -1,4 +1,24 @@
 export default [
+  {
+    path: '/main/list',
+    name: 'list',
+    meta: {
+      title: '指数列表'
+    },
+    component: () => import('@/views/main/IndexList.vue')
+  },
+  {
+    path: '/main/detail',
+    name: 'detail',
+    meta: {
+      title: '指数详情'
+    },
+    component: () => import('@/views/main/IndexDetail.vue')
+  },
+  {
+    path: '/main',
+    redirect: '/main/list'
+  }
   //   {
   //     name: 'DataOverview',
   //     meta: {
