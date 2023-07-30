@@ -99,12 +99,12 @@ const currentFormat = computed(() => {
 </script>
 
 <template>
-  <el-card shadow="hover" class="w-3/5" v-loading="loading">
+  <el-card shadow="hover" class="custom-card w-full" v-loading="loading">
     <template #header>
       <div class="flex items-end px-6">
-        <span class="text-3xl font-medium">{{ indexTitle }}</span>
+        <span class="text-2xl font-medium">{{ indexTitle }}</span>
         <div class="px-8 flex items-end gap-5">
-          <span class="text-2xl font-medium" :style="{ color: textColor }">{{
+          <span class="text-xl font-medium" :style="{ color: textColor }">{{
             currentData.l8
           }}</span>
           <span :style="{ color: textColor }">{{ Number(indexDelta).toFixed(2) }}</span>
@@ -120,3 +120,10 @@ const currentFormat = computed(() => {
     </div>
   </el-card>
 </template>
+
+<style>
+/* 组件样式中修改 el-card 组件的内边距 */
+.custom-card {
+  --el-card-padding: 10px; /* 你可以根据需要修改内边距的值 */
+}
+</style>

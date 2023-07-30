@@ -1,23 +1,23 @@
 export default [
   {
-    path: '/main/list',
-    name: 'list',
+    path: '/main/overview',
+    name: 'overview',
     meta: {
-      title: '指数列表'
+      title: '指数概览'
     },
-    component: () => import('@/views/main/IndexList.vue')
+    component: () => import('@/views/main/IndexOverview.vue')
   },
   {
-    path: '/main/detail',
-    name: 'detail',
+    path: '/main/category',
+    name: 'category',
     meta: {
-      title: '指数详情'
+      title: '指数分类'
     },
-    component: () => import('@/views/main/IndexDetail.vue')
+    component: () => import('@/views/main/IndexCategory.vue')
   },
   {
     path: '/main',
-    redirect: '/main/list'
+    redirect: '/main/overview'
   }
   //   {
   //     name: 'DataOverview',

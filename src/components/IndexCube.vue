@@ -1,10 +1,8 @@
 <script setup>
 import { computed, defineComponent } from 'vue'
-import { useRouter } from 'vue-router'
 import { INDEX_COLOR } from '@/constants/dictionary'
 
 defineComponent({ name: 'IndexCube' })
-const router = useRouter()
 const props = defineProps({
   data: {
     type: Object,
@@ -33,22 +31,11 @@ const textColor = computed(() => {
   const delta = Number(indexData.value.l8) - Number(indexData.value.l3)
   return delta >= 0 ? INDEX_COLOR.UP : INDEX_COLOR.DOWN
 })
-
-const onClick = () => {
-  router.push({
-    path: '/main/detail',
-    query: {
-      indexCode: indexData.value.swindexcode,
-      indexName: indexData.value.swindexname
-    }
-  })
-}
 </script>
 
 <template>
   <div
     class="w-[200px] h-[70px] border-2 rounded-2xl p-2 border-gray-200 text-center cursor-pointer"
-    @click="onClick"
   >
     <span class="text-slate-600 font-normal">{{ indexData.swindexname }}</span>
     <span class="text-slate-600 font-normal">{{ `(${indexData.swindexcode})` }}</span

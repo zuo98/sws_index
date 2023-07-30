@@ -1,0 +1,1188 @@
+[
+    {
+        "pid": 1,
+        "industryCode": 110000,
+        "indexName": "农林牧渔",
+        "child": [
+            {
+                "pid": 110000,
+                "industryCode": 110100,
+                "indexName": "种植业",
+                "child": [],
+                "indexCode": "801016"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110200,
+                "indexName": "渔业",
+                "child": [],
+                "indexCode": "801015"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110300,
+                "indexName": "林业Ⅱ",
+                "child": [],
+                "indexCode": "801011"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110400,
+                "indexName": "饲料",
+                "child": [],
+                "indexCode": "801014"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110500,
+                "indexName": "农产品加工",
+                "child": [],
+                "indexCode": "801012"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110700,
+                "indexName": "养殖业",
+                "child": [],
+                "indexCode": "801017"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110800,
+                "indexName": "动物保健Ⅱ",
+                "child": [],
+                "indexCode": "801018"
+            },
+            {
+                "pid": 110000,
+                "industryCode": 110900,
+                "indexName": "农业综合Ⅱ",
+                "child": [],
+                "indexCode": "801019"
+            }
+        ],
+        "indexCode": "801010"
+    },
+    {
+        "pid": 1,
+        "industryCode": 220000,
+        "indexName": "基础化工",
+        "child": [
+            {
+                "pid": 220000,
+                "industryCode": 220200,
+                "indexName": "化学原料",
+                "child": [],
+                "indexCode": "801033"
+            },
+            {
+                "pid": 220000,
+                "industryCode": 220300,
+                "indexName": "化学制品",
+                "child": [],
+                "indexCode": "801034"
+            },
+            {
+                "pid": 220000,
+                "industryCode": 220400,
+                "indexName": "化学纤维",
+                "child": [],
+                "indexCode": "801032"
+            },
+            {
+                "pid": 220000,
+                "industryCode": 220500,
+                "indexName": "塑料",
+                "child": [],
+                "indexCode": "801036"
+            },
+            {
+                "pid": 220000,
+                "industryCode": 220600,
+                "indexName": "橡胶",
+                "child": [],
+                "indexCode": "801037"
+            },
+            {
+                "pid": 220000,
+                "industryCode": 220800,
+                "indexName": "农化制品",
+                "child": [],
+                "indexCode": "801038"
+            },
+            {
+                "pid": 220000,
+                "industryCode": 220900,
+                "indexName": "非金属材料Ⅱ",
+                "child": [],
+                "indexCode": "801039"
+            }
+        ],
+        "indexCode": "801030"
+    },
+    {
+        "pid": 1,
+        "industryCode": 230000,
+        "indexName": "钢铁",
+        "child": [
+            {
+                "pid": 230000,
+                "industryCode": 230300,
+                "indexName": "冶钢原料",
+                "child": [],
+                "indexCode": "801043"
+            },
+            {
+                "pid": 230000,
+                "industryCode": 230400,
+                "indexName": "普钢",
+                "child": [],
+                "indexCode": "801044"
+            },
+            {
+                "pid": 230000,
+                "industryCode": 230500,
+                "indexName": "特钢Ⅱ",
+                "child": [],
+                "indexCode": "801045"
+            }
+        ],
+        "indexCode": "801040"
+    },
+    {
+        "pid": 1,
+        "industryCode": 240000,
+        "indexName": "有色金属",
+        "child": [
+            {
+                "pid": 240000,
+                "industryCode": 240200,
+                "indexName": "金属新材料",
+                "child": [],
+                "indexCode": "801051"
+            },
+            {
+                "pid": 240000,
+                "industryCode": 240300,
+                "indexName": "工业金属",
+                "child": [],
+                "indexCode": "801055"
+            },
+            {
+                "pid": 240000,
+                "industryCode": 240400,
+                "indexName": "贵金属",
+                "child": [],
+                "indexCode": "801053"
+            },
+            {
+                "pid": 240000,
+                "industryCode": 240500,
+                "indexName": "小金属",
+                "child": [],
+                "indexCode": "801054"
+            },
+            {
+                "pid": 240000,
+                "industryCode": 240600,
+                "indexName": "能源金属",
+                "child": [],
+                "indexCode": "801056"
+            }
+        ],
+        "indexCode": "801050"
+    },
+    {
+        "pid": 1,
+        "industryCode": 270000,
+        "indexName": "电子",
+        "child": [
+            {
+                "pid": 270000,
+                "industryCode": 270100,
+                "indexName": "半导体",
+                "child": [],
+                "indexCode": "801081"
+            },
+            {
+                "pid": 270000,
+                "industryCode": 270200,
+                "indexName": "元件",
+                "child": [],
+                "indexCode": "801083"
+            },
+            {
+                "pid": 270000,
+                "industryCode": 270300,
+                "indexName": "光学光电子",
+                "child": [],
+                "indexCode": "801084"
+            },
+            {
+                "pid": 270000,
+                "industryCode": 270400,
+                "indexName": "其他电子Ⅱ",
+                "child": [],
+                "indexCode": "801082"
+            },
+            {
+                "pid": 270000,
+                "industryCode": 270500,
+                "indexName": "消费电子",
+                "child": [],
+                "indexCode": "801085"
+            },
+            {
+                "pid": 270000,
+                "industryCode": 270600,
+                "indexName": "电子化学品Ⅱ",
+                "child": [],
+                "indexCode": "801086"
+            }
+        ],
+        "indexCode": "801080"
+    },
+    {
+        "pid": 1,
+        "industryCode": 280000,
+        "indexName": "汽车",
+        "child": [
+            {
+                "pid": 280000,
+                "industryCode": 280601,
+                "indexName": "商用车",
+                "child": [],
+                "indexCode": "801096"
+            },
+            {
+                "pid": 280000,
+                "industryCode": 280200,
+                "indexName": "汽车零部件",
+                "child": [],
+                "indexCode": "801093"
+            },
+            {
+                "pid": 280000,
+                "industryCode": 280300,
+                "indexName": "汽车服务",
+                "child": [],
+                "indexCode": "801092"
+            },
+            {
+                "pid": 280000,
+                "industryCode": 280400,
+                "indexName": "摩托车及其他",
+                "child": [],
+                "indexCode": "801881"
+            },
+            {
+                "pid": 280000,
+                "industryCode": 280500,
+                "indexName": "乘用车",
+                "child": [],
+                "indexCode": "801095"
+            }
+        ],
+        "indexCode": "801880"
+    },
+    {
+        "pid": 1,
+        "industryCode": 330000,
+        "indexName": "家用电器",
+        "child": [
+            {
+                "pid": 330000,
+                "industryCode": 330100,
+                "indexName": "白色家电",
+                "child": [],
+                "indexCode": "801111"
+            },
+            {
+                "pid": 330000,
+                "industryCode": 330200,
+                "indexName": "黑色家电",
+                "child": [],
+                "indexCode": "801112"
+            },
+            {
+                "pid": 330000,
+                "industryCode": 330300,
+                "indexName": "小家电",
+                "child": [],
+                "indexCode": "801113"
+            },
+            {
+                "pid": 330000,
+                "industryCode": 330400,
+                "indexName": "厨卫电器",
+                "child": [],
+                "indexCode": "801114"
+            },
+            {
+                "pid": 330000,
+                "industryCode": 330500,
+                "indexName": "照明设备Ⅱ",
+                "child": [],
+                "indexCode": "801115"
+            },
+            {
+                "pid": 330000,
+                "industryCode": 330600,
+                "indexName": "家电零部件Ⅱ",
+                "child": [],
+                "indexCode": "801116"
+            },
+            {
+                "pid": 330000,
+                "industryCode": 330700,
+                "indexName": "其他家电Ⅱ",
+                "child": [],
+                "indexCode": "801117"
+            }
+        ],
+        "indexCode": "801110"
+    },
+    {
+        "pid": 1,
+        "industryCode": 340000,
+        "indexName": "食品饮料",
+        "child": [
+            {
+                "pid": 340000,
+                "industryCode": 340400,
+                "indexName": "食品加工",
+                "child": [],
+                "indexCode": "801124"
+            },
+            {
+                "pid": 340000,
+                "industryCode": 340500,
+                "indexName": "白酒Ⅱ",
+                "child": [],
+                "indexCode": "801125"
+            },
+            {
+                "pid": 340000,
+                "industryCode": 340600,
+                "indexName": "非白酒",
+                "child": [],
+                "indexCode": "801126"
+            },
+            {
+                "pid": 340000,
+                "industryCode": 340700,
+                "indexName": "饮料乳品",
+                "child": [],
+                "indexCode": "801127"
+            },
+            {
+                "pid": 340000,
+                "industryCode": 340800,
+                "indexName": "休闲食品",
+                "child": [],
+                "indexCode": "801128"
+            },
+            {
+                "pid": 340000,
+                "industryCode": 340900,
+                "indexName": "调味发酵品Ⅱ",
+                "child": [],
+                "indexCode": "801129"
+            }
+        ],
+        "indexCode": "801120"
+    },
+    {
+        "pid": 1,
+        "industryCode": 350000,
+        "indexName": "纺织服饰",
+        "child": [
+            {
+                "pid": 350000,
+                "industryCode": 350100,
+                "indexName": "纺织制造",
+                "child": [],
+                "indexCode": "801131"
+            },
+            {
+                "pid": 350000,
+                "industryCode": 350200,
+                "indexName": "服装家纺",
+                "child": [],
+                "indexCode": "801132"
+            },
+            {
+                "pid": 350000,
+                "industryCode": 350300,
+                "indexName": "饰品",
+                "child": [],
+                "indexCode": "801133"
+            }
+        ],
+        "indexCode": "801130"
+    },
+    {
+        "pid": 1,
+        "industryCode": 360000,
+        "indexName": "轻工制造",
+        "child": [
+            {
+                "pid": 360000,
+                "industryCode": 360100,
+                "indexName": "造纸",
+                "child": [],
+                "indexCode": "801143"
+            },
+            {
+                "pid": 360000,
+                "industryCode": 360200,
+                "indexName": "包装印刷",
+                "child": [],
+                "indexCode": "801141"
+            },
+            {
+                "pid": 360000,
+                "industryCode": 360300,
+                "indexName": "家居用品",
+                "child": [],
+                "indexCode": "801142"
+            },
+            {
+                "pid": 360000,
+                "industryCode": 360500,
+                "indexName": "文娱用品",
+                "child": [],
+                "indexCode": "801145"
+            }
+        ],
+        "indexCode": "801140"
+    },
+    {
+        "pid": 1,
+        "industryCode": 370000,
+        "indexName": "医药生物",
+        "child": [
+            {
+                "pid": 370000,
+                "industryCode": 370100,
+                "indexName": "化学制药",
+                "child": [],
+                "indexCode": "801151"
+            },
+            {
+                "pid": 370000,
+                "industryCode": 370200,
+                "indexName": "中药Ⅱ",
+                "child": [],
+                "indexCode": "801155"
+            },
+            {
+                "pid": 370000,
+                "industryCode": 370300,
+                "indexName": "生物制品",
+                "child": [],
+                "indexCode": "801152"
+            },
+            {
+                "pid": 370000,
+                "industryCode": 370400,
+                "indexName": "医药商业",
+                "child": [],
+                "indexCode": "801154"
+            },
+            {
+                "pid": 370000,
+                "industryCode": 370500,
+                "indexName": "医疗器械",
+                "child": [],
+                "indexCode": "801153"
+            },
+            {
+                "pid": 370000,
+                "industryCode": 370600,
+                "indexName": "医疗服务",
+                "child": [],
+                "indexCode": "801156"
+            }
+        ],
+        "indexCode": "801150"
+    },
+    {
+        "pid": 1,
+        "industryCode": 410000,
+        "indexName": "公用事业",
+        "child": [
+            {
+                "pid": 410000,
+                "industryCode": 410100,
+                "indexName": "电力",
+                "child": [],
+                "indexCode": "801161"
+            },
+            {
+                "pid": 410000,
+                "industryCode": 410300,
+                "indexName": "燃气Ⅱ",
+                "child": [],
+                "indexCode": "801163"
+            }
+        ],
+        "indexCode": "801160"
+    },
+    {
+        "pid": 1,
+        "industryCode": 420000,
+        "indexName": "交通运输",
+        "child": [
+            {
+                "pid": 420000,
+                "industryCode": 421102,
+                "indexName": "航运港口",
+                "child": [],
+                "indexCode": "801992"
+            },
+            {
+                "pid": 420000,
+                "industryCode": 420800,
+                "indexName": "物流",
+                "child": [],
+                "indexCode": "801178"
+            },
+            {
+                "pid": 420000,
+                "industryCode": 420900,
+                "indexName": "铁路公路",
+                "child": [],
+                "indexCode": "801179"
+            },
+            {
+                "pid": 420000,
+                "industryCode": 421000,
+                "indexName": "航空机场",
+                "child": [],
+                "indexCode": "801991"
+            }
+        ],
+        "indexCode": "801170"
+    },
+    {
+        "pid": 1,
+        "industryCode": 430000,
+        "indexName": "房地产",
+        "child": [
+            {
+                "pid": 430000,
+                "industryCode": 430100,
+                "indexName": "房地产开发",
+                "child": [],
+                "indexCode": "801181"
+            },
+            {
+                "pid": 430000,
+                "industryCode": 430300,
+                "indexName": "房地产服务",
+                "child": [],
+                "indexCode": "801183"
+            }
+        ],
+        "indexCode": "801180"
+    },
+    {
+        "pid": 1,
+        "industryCode": 450000,
+        "indexName": "商贸零售",
+        "child": [
+            {
+                "pid": 450000,
+                "industryCode": 450200,
+                "indexName": "贸易Ⅱ",
+                "child": [],
+                "indexCode": "801202"
+            },
+            {
+                "pid": 450000,
+                "industryCode": 450300,
+                "indexName": "一般零售",
+                "child": [],
+                "indexCode": "801203"
+            },
+            {
+                "pid": 450000,
+                "industryCode": 450400,
+                "indexName": "专业连锁Ⅱ",
+                "child": [],
+                "indexCode": "801204"
+            },
+            {
+                "pid": 450000,
+                "industryCode": 450600,
+                "indexName": "互联网电商",
+                "child": [],
+                "indexCode": "801206"
+            },
+            {
+                "pid": 450000,
+                "industryCode": 450700,
+                "indexName": "旅游零售Ⅱ",
+                "child": [],
+                "indexCode": "801207"
+            }
+        ],
+        "indexCode": "801200"
+    },
+    {
+        "pid": 1,
+        "industryCode": 460000,
+        "indexName": "社会服务",
+        "child": [
+            {
+                "pid": 460000,
+                "industryCode": 460600,
+                "indexName": "体育Ⅱ",
+                "child": [],
+                "indexCode": "801216"
+            },
+            {
+                "pid": 460000,
+                "industryCode": 460700,
+                "indexName": "本地生活服务Ⅱ",
+                "child": [],
+                "indexCode": "801217"
+            },
+            {
+                "pid": 460000,
+                "industryCode": 460800,
+                "indexName": "专业服务",
+                "child": [],
+                "indexCode": "801218"
+            },
+            {
+                "pid": 460000,
+                "industryCode": 460900,
+                "indexName": "酒店餐饮",
+                "child": [],
+                "indexCode": "801219"
+            },
+            {
+                "pid": 460000,
+                "industryCode": 461000,
+                "indexName": "旅游及景区",
+                "child": [],
+                "indexCode": "801993"
+            },
+            {
+                "pid": 460000,
+                "industryCode": 461100,
+                "indexName": "教育",
+                "child": [],
+                "indexCode": "801994"
+            }
+        ],
+        "indexCode": "801210"
+    },
+    {
+        "pid": 1,
+        "industryCode": 480000,
+        "indexName": "银行",
+        "child": [
+            {
+                "pid": 480000,
+                "industryCode": 480200,
+                "indexName": "国有大型银行Ⅱ",
+                "child": [],
+                "indexCode": "801782"
+            },
+            {
+                "pid": 480000,
+                "industryCode": 480300,
+                "indexName": "股份制银行Ⅱ",
+                "child": [],
+                "indexCode": "801783"
+            },
+            {
+                "pid": 480000,
+                "industryCode": 480400,
+                "indexName": "城商行Ⅱ",
+                "child": [],
+                "indexCode": "801784"
+            },
+            {
+                "pid": 480000,
+                "industryCode": 480500,
+                "indexName": "农商行Ⅱ",
+                "child": [],
+                "indexCode": "801785"
+            },
+            {
+                "pid": 480000,
+                "industryCode": 480600,
+                "indexName": "其他银行Ⅱ",
+                "child": [],
+                "indexCode": "801786"
+            }
+        ],
+        "indexCode": "801780"
+    },
+    {
+        "pid": 1,
+        "industryCode": 490000,
+        "indexName": "非银金融",
+        "child": [
+            {
+                "pid": 490000,
+                "industryCode": 490100,
+                "indexName": "证券Ⅱ",
+                "child": [],
+                "indexCode": "801193"
+            },
+            {
+                "pid": 490000,
+                "industryCode": 490200,
+                "indexName": "保险Ⅱ",
+                "child": [],
+                "indexCode": "801194"
+            },
+            {
+                "pid": 490000,
+                "industryCode": 490300,
+                "indexName": "多元金融",
+                "child": [],
+                "indexCode": "801191"
+            }
+        ],
+        "indexCode": "801790"
+    },
+    {
+        "pid": 1,
+        "industryCode": 510000,
+        "indexName": "综合",
+        "child": [
+            {
+                "pid": 510000,
+                "industryCode": 510100,
+                "indexName": "综合Ⅱ",
+                "child": [],
+                "indexCode": "801231"
+            }
+        ],
+        "indexCode": "801230"
+    },
+    {
+        "pid": 1,
+        "industryCode": 610000,
+        "indexName": "建筑材料",
+        "child": [
+            {
+                "pid": 610000,
+                "industryCode": 610100,
+                "indexName": "水泥",
+                "child": [],
+                "indexCode": "801711"
+            },
+            {
+                "pid": 610000,
+                "industryCode": 610200,
+                "indexName": "玻璃玻纤",
+                "child": [],
+                "indexCode": "801712"
+            },
+            {
+                "pid": 610000,
+                "industryCode": 610300,
+                "indexName": "装修建材",
+                "child": [],
+                "indexCode": "801713"
+            }
+        ],
+        "indexCode": "801710"
+    },
+    {
+        "pid": 1,
+        "industryCode": 620000,
+        "indexName": "建筑装饰",
+        "child": [
+            {
+                "pid": 620000,
+                "industryCode": 620100,
+                "indexName": "房屋建设Ⅱ",
+                "child": [],
+                "indexCode": "801721"
+            },
+            {
+                "pid": 620000,
+                "industryCode": 620200,
+                "indexName": "装修装饰Ⅱ",
+                "child": [],
+                "indexCode": "801722"
+            },
+            {
+                "pid": 620000,
+                "industryCode": 620300,
+                "indexName": "基础建设",
+                "child": [],
+                "indexCode": "801723"
+            },
+            {
+                "pid": 620000,
+                "industryCode": 620400,
+                "indexName": "专业工程",
+                "child": [],
+                "indexCode": "801724"
+            },
+            {
+                "pid": 620000,
+                "industryCode": 620600,
+                "indexName": "工程咨询服务Ⅱ",
+                "child": [],
+                "indexCode": "801726"
+            }
+        ],
+        "indexCode": "801720"
+    },
+    {
+        "pid": 1,
+        "industryCode": 630000,
+        "indexName": "电力设备",
+        "child": [
+            {
+                "pid": 630000,
+                "industryCode": 630100,
+                "indexName": "电机Ⅱ",
+                "child": [],
+                "indexCode": "801731"
+            },
+            {
+                "pid": 630000,
+                "industryCode": 630300,
+                "indexName": "其他电源设备Ⅱ",
+                "child": [],
+                "indexCode": "801733"
+            },
+            {
+                "pid": 630000,
+                "industryCode": 630500,
+                "indexName": "光伏设备",
+                "child": [],
+                "indexCode": "801735"
+            },
+            {
+                "pid": 630000,
+                "industryCode": 630600,
+                "indexName": "风电设备",
+                "child": [],
+                "indexCode": "801736"
+            },
+            {
+                "pid": 630000,
+                "industryCode": 630700,
+                "indexName": "电池",
+                "child": [],
+                "indexCode": "801737"
+            },
+            {
+                "pid": 630000,
+                "industryCode": 630800,
+                "indexName": "电网设备",
+                "child": [],
+                "indexCode": "801738"
+            }
+        ],
+        "indexCode": "801730"
+    },
+    {
+        "pid": 1,
+        "industryCode": 640000,
+        "indexName": "机械设备",
+        "child": [
+            {
+                "pid": 640000,
+                "industryCode": 640100,
+                "indexName": "通用设备",
+                "child": [],
+                "indexCode": "801072"
+            },
+            {
+                "pid": 640000,
+                "industryCode": 640200,
+                "indexName": "专用设备",
+                "child": [],
+                "indexCode": "801074"
+            },
+            {
+                "pid": 640000,
+                "industryCode": 640500,
+                "indexName": "轨交设备Ⅱ",
+                "child": [],
+                "indexCode": "801076"
+            },
+            {
+                "pid": 640000,
+                "industryCode": 640600,
+                "indexName": "工程机械",
+                "child": [],
+                "indexCode": "801077"
+            },
+            {
+                "pid": 640000,
+                "industryCode": 640700,
+                "indexName": "自动化设备",
+                "child": [],
+                "indexCode": "801078"
+            }
+        ],
+        "indexCode": "801890"
+    },
+    {
+        "pid": 1,
+        "industryCode": 650000,
+        "indexName": "国防军工",
+        "child": [
+            {
+                "pid": 650000,
+                "industryCode": 650100,
+                "indexName": "航天装备Ⅱ",
+                "child": [],
+                "indexCode": "801741"
+            },
+            {
+                "pid": 650000,
+                "industryCode": 650200,
+                "indexName": "航空装备Ⅱ",
+                "child": [],
+                "indexCode": "801742"
+            },
+            {
+                "pid": 650000,
+                "industryCode": 650300,
+                "indexName": "地面兵装Ⅱ",
+                "child": [],
+                "indexCode": "801743"
+            },
+            {
+                "pid": 650000,
+                "industryCode": 650400,
+                "indexName": "航海装备Ⅱ",
+                "child": [],
+                "indexCode": "801744"
+            },
+            {
+                "pid": 650000,
+                "industryCode": 650500,
+                "indexName": "军工电子Ⅱ",
+                "child": [],
+                "indexCode": "801745"
+            }
+        ],
+        "indexCode": "801740"
+    },
+    {
+        "pid": 1,
+        "industryCode": 710000,
+        "indexName": "计算机",
+        "child": [
+            {
+                "pid": 710000,
+                "industryCode": 710100,
+                "indexName": "计算机设备",
+                "child": [],
+                "indexCode": "801101"
+            },
+            {
+                "pid": 710000,
+                "industryCode": 710300,
+                "indexName": "IT服务Ⅱ",
+                "child": [],
+                "indexCode": "801103"
+            },
+            {
+                "pid": 710000,
+                "industryCode": 710400,
+                "indexName": "软件开发",
+                "child": [],
+                "indexCode": "801104"
+            }
+        ],
+        "indexCode": "801750"
+    },
+    {
+        "pid": 1,
+        "industryCode": 720000,
+        "indexName": "传媒",
+        "child": [
+            {
+                "pid": 720000,
+                "industryCode": 720400,
+                "indexName": "游戏Ⅱ",
+                "child": [],
+                "indexCode": "801764"
+            },
+            {
+                "pid": 720000,
+                "industryCode": 720500,
+                "indexName": "广告营销",
+                "child": [],
+                "indexCode": "801765"
+            },
+            {
+                "pid": 720000,
+                "industryCode": 720600,
+                "indexName": "影视院线",
+                "child": [],
+                "indexCode": "801766"
+            },
+            {
+                "pid": 720000,
+                "industryCode": 720700,
+                "indexName": "数字媒体",
+                "child": [],
+                "indexCode": "801767"
+            },
+            {
+                "pid": 720000,
+                "industryCode": 720800,
+                "indexName": "社交Ⅱ",
+                "child": [],
+                "indexCode": "801768"
+            },
+            {
+                "pid": 720000,
+                "industryCode": 720900,
+                "indexName": "出版",
+                "child": [],
+                "indexCode": "801769"
+            },
+            {
+                "pid": 720000,
+                "industryCode": 721000,
+                "indexName": "电视广播Ⅱ",
+                "child": [],
+                "indexCode": "801995"
+            }
+        ],
+        "indexCode": "801760"
+    },
+    {
+        "pid": 1,
+        "industryCode": 730000,
+        "indexName": "通信",
+        "child": [
+            {
+                "pid": 730000,
+                "industryCode": 730100,
+                "indexName": "通信服务",
+                "child": [],
+                "indexCode": "801223"
+            },
+            {
+                "pid": 730000,
+                "industryCode": 730200,
+                "indexName": "通信设备",
+                "child": [],
+                "indexCode": "801102"
+            }
+        ],
+        "indexCode": "801770"
+    },
+    {
+        "pid": 1,
+        "industryCode": 740000,
+        "indexName": "煤炭",
+        "child": [
+            {
+                "pid": 740000,
+                "industryCode": 740100,
+                "indexName": "煤炭开采",
+                "child": [],
+                "indexCode": "801951"
+            },
+            {
+                "pid": 740000,
+                "industryCode": 740200,
+                "indexName": "焦炭Ⅱ",
+                "child": [],
+                "indexCode": "801952"
+            }
+        ],
+        "indexCode": "801950"
+    },
+    {
+        "pid": 1,
+        "industryCode": 750000,
+        "indexName": "石油石化",
+        "child": [
+            {
+                "pid": 750000,
+                "industryCode": 750100,
+                "indexName": "油气开采Ⅱ",
+                "child": [],
+                "indexCode": "801961"
+            },
+            {
+                "pid": 750000,
+                "industryCode": 750200,
+                "indexName": "油服工程",
+                "child": [],
+                "indexCode": "801962"
+            },
+            {
+                "pid": 750000,
+                "industryCode": 750300,
+                "indexName": "炼化及贸易",
+                "child": [],
+                "indexCode": "801963"
+            }
+        ],
+        "indexCode": "801960"
+    },
+    {
+        "pid": 1,
+        "industryCode": 760000,
+        "indexName": "环保",
+        "child": [
+            {
+                "pid": 760000,
+                "industryCode": 760100,
+                "indexName": "环境治理",
+                "child": [],
+                "indexCode": "801971"
+            },
+            {
+                "pid": 760000,
+                "industryCode": 760200,
+                "indexName": "环保设备Ⅱ",
+                "child": [],
+                "indexCode": "801972"
+            }
+        ],
+        "indexCode": "801970"
+    },
+    {
+        "pid": 1,
+        "industryCode": 770000,
+        "indexName": "美容护理",
+        "child": [
+            {
+                "pid": 770000,
+                "industryCode": 770100,
+                "indexName": "个护用品",
+                "child": [],
+                "indexCode": "801981"
+            },
+            {
+                "pid": 770000,
+                "industryCode": 770200,
+                "indexName": "化妆品",
+                "child": [],
+                "indexCode": "801982"
+            },
+            {
+                "pid": 770000,
+                "industryCode": 770300,
+                "indexName": "医疗美容",
+                "child": [],
+                "indexCode": "801983"
+            }
+        ],
+        "indexCode": "801980"
+    }
+]

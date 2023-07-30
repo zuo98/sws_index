@@ -4,7 +4,7 @@ import { useIndexType } from '@/composables/useIndexType'
 import IndexCube from '@/components/IndexCube.vue'
 import dayjs from 'dayjs'
 
-defineComponent({ name: 'IndexList' })
+defineComponent({ name: 'IndexOverview' })
 
 const { getIndexCurrentByType } = useIndexType()
 
@@ -17,11 +17,10 @@ const indexType = [
     value: '一级行业',
     key: 1
   },
-  {
-    value: '二级行业',
-    key: 11
-  },
-
+  // {
+  //   value: '二级行业',
+  //   key: 11
+  // },
   {
     value: '风格指数',
     key: 3

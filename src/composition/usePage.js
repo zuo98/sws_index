@@ -37,9 +37,9 @@ export const usePage = (opts) => {
     }
 
     getListApi(opts).then((res) => {
-      if (res.code === 200) {
-        tableData.value = res.data?.list || res.data?.rows || []
-        page.total = res.data?.total || 0
+      if (res.code === 200 || res.code == '200') {
+        tableData.value = res.data?.list || res.data?.rows || res.data?.results || []
+        page.total = res.data?.total || res.data?.count || 0
         getListFunc()
       }
     })
