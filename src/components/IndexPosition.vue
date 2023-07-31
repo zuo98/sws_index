@@ -1,6 +1,6 @@
 <script setup>
 import axios from 'axios'
-import { defineComponent, defineProps } from 'vue'
+import { defineComponent, defineProps, computed } from 'vue'
 import { usePage } from '@/composition/usePage.js'
 import { dayjs } from 'element-plus'
 
@@ -14,6 +14,14 @@ const props = defineProps({
   }
 })
 
+const indexCode = computed(() => {
+  return props.code
+})
+
+const customQueryParameters = () => {
+  return { indexCode: indexCode.value }
+}
+
 const getListApi = (opts) => {
   return axios.get(
     `/sws/index_publish/details/component_stocks/?swindexcode=${opts.indexCode}&page=${opts.pageNum}&page_size=${opts.pageSize}`
@@ -21,8 +29,8 @@ const getListApi = (opts) => {
 }
 
 const { page, tableData } = usePage({
-  searchForm: { indexCode: props.code },
-  getListApi: getListApi
+  getListApi: getListApi,
+  customQueryParameters: customQueryParameters,
 })
 </script>
 <template>
