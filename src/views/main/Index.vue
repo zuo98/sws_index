@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { defineComponent } from 'vue'
 import { useRouter } from 'vue-router'
+import rounteConfig from '@/router/config'
 
 import { Document, Menu as IconMenu, Setting } from '@element-plus/icons-vue'
 
@@ -11,26 +12,10 @@ const router = useRouter()
 
 const headerTitle = ref('申万行业指数')
 
-const isCollapse = ref(true)
-
-const menuDic = ref([
-  {
-    menuName: 'overview',
-    path: '/main/overview'
-  },
-  {
-    menuName: 'category',
-    path: '/main/category'
-  },
-  {
-    menuName: 'setting',
-    path: '/main/setting'
-  }
-])
+const isCollapse = ref(false)
 
 const clickItem = (event) => {
-  console.log('event: ', event)
-  const path = menuDic.value.find((v) => v.menuName == event)?.path
+  const path = rounteConfig.filter((v) => !!v?.meta?.title).find((v) => v.name == event)?.path
   router.push({
     path: path
   })

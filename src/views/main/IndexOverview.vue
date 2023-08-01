@@ -14,17 +14,17 @@ const indexType = [
     key: 0
   },
   {
+    value: '风格指数',
+    key: 3
+  },
+  {
     value: '一级行业',
     key: 1
-  },
+  }
   // {
   //   value: '二级行业',
   //   key: 11
-  // },
-  {
-    value: '风格指数',
-    key: 3
-  }
+  // }
 ]
 const loading = ref(true)
 const type = ref('市场表征')
